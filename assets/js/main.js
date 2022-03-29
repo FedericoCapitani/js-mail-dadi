@@ -21,6 +21,11 @@ controllo.addEventListener('click', function(){
         messaggio_errore.insertAdjacentHTML('beforeend', errore)
     }
 })
+// rimuovere messaggio mail
+const reset_mail = document.getElementById('reset_mail')
+reset_mail.addEventListener('click', function(){
+    document.location.reload();
+})
 
 // click per generare i numeri
 let genera = document.getElementById('genera')
@@ -48,4 +53,10 @@ genera.addEventListener('click', function(){
         let pareggio = `<p>Avete pareggiato, entrambi avete fatto: ${number_player}</p>`
         messaggio_p.insertAdjacentHTML('beforeend', pareggio)
     }
+})
+
+// rimuovere messaggi numeri
+const reset_number = document.getElementById('reset_numeri')
+reset_number.addEventListener('click', function(){
+    document.location.reload();
 })
